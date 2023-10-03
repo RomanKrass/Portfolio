@@ -46,6 +46,8 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.TOKEN_GITHUB_ACTION }}
+          git-user-name: "Roman Krass"
+          git-user-email: "roman.krass@hotmail.ch"
           output-file: "false"
 
       - name: Create Release
