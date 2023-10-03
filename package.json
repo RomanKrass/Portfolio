@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href https://github.com/RomanKrass/Portfolio/ --no-silent",
+    "deploy": "ng deploy --base-href https://romankrass.github.io/Portfolio/ --no-silent",
     "lint": "ng lint"
   },
   "private": true,
