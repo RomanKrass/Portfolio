@@ -45,7 +45,7 @@ jobs:
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with:
-          github-token: ${{ secrets.TOKEN_GITHUB_ACTION }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           git-user-name: "Roman Krass"
           git-user-email: "roman.krass@hotmail.ch"
           output-file: "false"
