@@ -24,7 +24,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: RomanKrass/Portfolio@v3
+        uses: RomanKrass/Portfolio
         with:
           target_branch: gh-pages
         env:
