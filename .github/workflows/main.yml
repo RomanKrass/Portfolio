@@ -47,7 +47,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           git-user-name: "Roman Krass"
-          git-user-email: "roman.krass@hotmail.ch"
+          git-user-email: "roman.krass@students.bfh.ch"
           output-file: "false"
 
       - name: Create Release
