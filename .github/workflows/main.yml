@@ -1,3 +1,4 @@
+# Adapted from https://medium.com/rupesh-tiwari/how-to-deploy-angular-apps-to-github-pages-gh-pages-setup-ci-cd-for-angular-app-with-github-714c1e555de5
 name: CI / CD for portfolio page
 on:
   push:
