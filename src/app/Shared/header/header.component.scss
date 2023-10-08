@@ -1,0 +1,42 @@
+// Define a color palette with pastel colors
+$color-palette: (
+    primary: #b2d8d8,
+    secondary: #d8b2d8,
+    tertiary: #d8d8b2,
+    quaternary: #b2d8b2
+);
+
+// Use the color palette to style the header
+.mat-elevation-z4 {
+    background-color: map-get($color-palette, primary);
+    color: #fff;
+    padding: 1rem;
+
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                margin-right: 1rem;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    transition: color 0.2s ease-in-out;
+
+                    &:hover {
+                        color: map-get($color-palette, secondary);
+                    }
+                }
+            }
+        }
+    }
+}
