@@ -10,9 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '../material/material.module';
 import { FooterComponent } from './Shared/footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
-  declarations: [AppComponent, AboutComponent, HeaderComponent, FooterComponent, ContactComponent],
+  declarations: [
+    AppComponent,
+    AboutComponent,
+    HeaderComponent,
+    FooterComponent,
+    ContactComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -20,6 +26,7 @@ import { ContactComponent } from './contact/contact.component';
     MatToolbarModule,
     MatIconModule,
     MaterialModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
