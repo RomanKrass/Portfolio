@@ -11,6 +11,7 @@ import { MaterialModule } from '../material/material.module';
 import { FooterComponent } from './Shared/footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     ContactComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
