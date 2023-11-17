@@ -1,10 +1,9 @@
+// CSS for weather icons and description box
 .icon-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end; // align items to the right
+  align-items: flex-end;
   flex-wrap: wrap;
   margin: 0 auto;
-  flex-direction: column; // display items in a column
+  flex-direction: column;
 }
   
   .icon {
@@ -17,4 +16,16 @@
   .icon i {
     font-size: 1.5rem;
     margin-bottom: 0.1rem;
+  }
+
+  // CSS for description box
+  .description-box {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    margin-left: 0%;
+  }
+  
+  #description {
+    padding: 10px;
   }
