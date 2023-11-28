@@ -7,18 +7,24 @@ import { Observable } from 'rxjs';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
+  // variables
   public latitude = 0;
   public longitude = 0;
   private locationObservable = new Observable<boolean>();
 
   public ngOnInit(): void {
     this.getLocation().subscribe((result) => {
+      // Only get the weather if the location was successfully obtained
       if (result) {
-        this.getWeather();
+        //this.getWeather();
       }
     });
   }
 
+  /**
+   * Gets the current location.
+   * @returns An observable that emits a boolean value indicating if the location was successfully obtained.
+   */
   getLocation(): Observable<boolean> {
     this.locationObservable = new Observable<boolean>((observer) => {
       if (navigator.geolocation) {
@@ -53,6 +59,7 @@ export class HomeComponent {
     return this.locationObservable;
   }
 
+  // Gets the weather information based on the current location.
   getWeather() {
     const url =
       'https://api.openweathermap.org/data/2.5/weather?lat=' +
@@ -78,16 +85,19 @@ export class HomeComponent {
           weatherElement.innerHTML = `The weather in ${city} is ${weather} with a temperature of ${temperature} degrees Celsius. It feels like ${feelsLike} degrees Celsius. The humidity is ${humidity}% and the wind speed is ${wind} m/s.`;
         }
 
+        // updatew temperature element
         const tempElement = document.getElementById('temperature');
         if (tempElement) {
           tempElement.innerHTML = `${temperature} &#8451;`;
         }
 
+        // update wind element
         const windElement = document.getElementById('wind');
         if (windElement) {
           windElement.innerHTML = `${wind} m/s`;
         }
       })
+
       .catch((error) => {
         console.log(error);
         alert('Error getting weather data.');
