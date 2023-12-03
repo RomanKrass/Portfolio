@@ -1,8 +1,11 @@
+<div class="description d-flex justify-content-center text-center fs-5">
+  <p>If you want to contact me, feel free to reach out over my social media or send me an email with the contact form.</p>
+</div>
 <div class="contact-form">
-<form (ngSubmit)="onSubmit()">
+  <form (ngSubmit)="onSubmit()">
     <div class="form-group row">
       <label for="message">Message:</label>
-      <div class="col-sm-60">
+      <div class="col-12">
         <textarea id="message" name="message" [(ngModel)]="message" required class="form-control"></textarea>
       </div>
     </div>
