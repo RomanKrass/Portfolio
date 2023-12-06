@@ -12,6 +12,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+
 @NgModule({
   declarations: [
     AppComponent,
