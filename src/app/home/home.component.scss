@@ -1,34 +1,14 @@
-// CSS for weather icons and description box
-.icon-box {
-  align-items: flex-end;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  flex-direction: column;
+// CSS for description box
+.description-box {
+  float: left;
+  width:80%;
+  padding: 10px;
+  margin-left: 0%;
 }
-  
-  .icon {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin: 0.5rem;
-  }
-  
-  .icon i {
-    font-size: 1.5rem;
-    margin-bottom: 0.1rem;
-  }
 
-  // CSS for description box
-  .description-box {
-    float: left;
-    width: 70%;
-    padding: 20px;
-    margin-left: 0%;
-  }
-  
-  #description {
-    padding: 10px;
-  }
+#description {
+  padding: 0px;
+}
 
 // CSS for Employment
 // Adapted from https://codepen.io/aja9104/pen/nzaZwW
@@ -69,7 +49,7 @@ h1
 
 .right
 {
-	float:left;
+	float:middle;
 	height:100%;
 	position:relative;
 	width:80%;
@@ -87,18 +67,6 @@ h1
 	right:0;
 	top:0;
 	width:85%;
-}
-
-.me-img
-{
-	background:url(https://media-exp1.licdn.com/dms/image/C4E03AQGnLq_IB_mf8Q/profile-displayphoto-shrink_400_400/0/1631022739752?e=1648684800&v=beta&t=eICUjHeH_g9GQEItmEMK1j2gCADwqfjrlccSD_5za58) no-repeat center center ;
-	background-size:100%;
-  background-position:0px;
-	border-radius:100%;
-	height:150px;
-	margin:0 auto;
-	position:relative;
-	width:150px;
 }
 
 .name-hero h1
@@ -134,7 +102,7 @@ h1
 {
 	margin:0 auto;
 	max-width:100%;
-	padding:3em;
+	padding:1.5em;
 }
 
 .inner h1
@@ -155,7 +123,7 @@ h1
 
 .inner section
 {
-	margin:100px auto;
+	margin:90px auto;
 }
 
 ul
@@ -207,12 +175,4 @@ ul
    height: 0;
    clear: both;
 }
-.handmade {
-  text-align:right;
-  margin-top:100px;
 }
-.handmade em {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 1.25em;
-  margin-left:5px;
-}}

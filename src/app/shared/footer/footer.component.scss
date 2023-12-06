@@ -21,3 +21,27 @@ $secondary-color: #6c757d;
         }
     }
 }
+
+// CSS for weather icons and description box
+.icon-box {
+    align-items: flex-end;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+    
+    .icon {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0.5rem;
+    }
+    
+    .icon i {
+      font-size: 1rem;
+      margin-bottom: 0.1rem;
+    }
+
+.margin {
+    margin-right: 0.2em;
+    margin-left: 0.4em;
+}
