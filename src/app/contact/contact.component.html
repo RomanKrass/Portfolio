@@ -5,9 +5,7 @@
   <form (ngSubmit)="onSubmit()">
     <div class="form-group row">
       <label for="message">Message:</label>
-      <div class="col-12">
         <textarea id="message" name="message" [(ngModel)]="message" required class="form-control"></textarea>
-      </div>
     </div>
     <button type="submit">Send</button>
   </form>

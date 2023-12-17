@@ -13,16 +13,21 @@
   
   .contact-form input,
   .contact-form textarea {
-    width: 100%;
+    width: 500px;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 250px;
   }
-  
-  .contact-form textarea {
-    height: 150px;
+
+  @media screen and (max-width: 768px) {
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      height: 100px;
+    }
   }
   
   .contact-form button[type="submit"] {
@@ -38,3 +43,8 @@
   .contact-form button[type="submit"]:hover {
     background-color: #85b8b8;
   }
+
+//textarea {
+//    width: 100%;
+//    height: 500em;
+//}
