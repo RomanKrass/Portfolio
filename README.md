@@ -3,7 +3,7 @@
 [![pages-build-deployment](https://github.com/RomanKrass/Portfolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/RomanKrass/Portfolio/actions/workflows/pages/pages-build-deployment)
 [![CodeQL](https://github.com/RomanKrass/Portfolio/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/RomanKrass/Portfolio/actions/workflows/github-code-scanning/codeql)
 
-This portfolio webpage was create as a deliverable for the modul EWEB. The following technologies are used:
+This portfolio webpage was create as a deliverable for the modul EWEB at Bern University of Applied Sciences. The following technologies are used:
 - Angular
 - Typescript
 - HTML
