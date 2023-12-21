@@ -70,7 +70,7 @@ export class FooterComponent {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        //console.log(data);
         const weather = data.weather[0].description;
         const temperature = data.main.temp;
         const feelsLike = data.main.feels_like;
