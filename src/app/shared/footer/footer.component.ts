@@ -15,7 +15,7 @@ export class FooterComponent {
     this.getLocation().subscribe((result) => {
       // Only get the weather if the location was successfully obtained
       if (result) {
-        // this.getWeather();
+        this.getWeather();
       }
     });
   }
