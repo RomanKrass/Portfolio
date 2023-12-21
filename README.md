@@ -7,3 +7,9 @@ This portfolio webpage was create as a deliverable for the modul EWEB. The follo
 - Typescript
 - HTML
 - CSS
+
+# Security
+To increase the security the following features are enabled on this repository
+- Dependabot alerts
+- Code scanning alerts
+- Secret scanning alerts
